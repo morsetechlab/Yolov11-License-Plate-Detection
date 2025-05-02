@@ -65,18 +65,22 @@ max_det=1000 \
 source=examples/plate.jpg
 ```
 
-### Results:
+## Results
 
-**PR curve** (Precision-Recall)
+### PR Curve (Precision-Recall)
+
 ![PR Curve](results/PR_curve.png)
 
-**Losses และค่า mAP** ตลอดการฝึก
+### Losses และ mAP ตลอดการฝึก
+
 ![Training Results](results/results.png)
 
-**Confusion matrix**
+### Confusion Matrix
+
 ![Confusion Matrix](results/confusion_matrix.png)
 
-**Validation Batch**
+### Validation Batch
+
 ![val_batch0](results/val_batch0_pred.jpg)
 ![val_batch1](results/val_batch1_pred.jpg)
 ![val_batch2](results/val_batch2_pred.jpg)
