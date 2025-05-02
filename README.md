@@ -53,9 +53,11 @@
 ## Inference
 ![CLI Inference](results/cli_inference_result.jpg)
 
-![Video Inference](output.gif)
+<p align="center">
+  <img src="output.gif" width="100%" />
+</p>
 
-#### Detect on Command Line (`inference-cli.py`)
+### Detect on Command Line (`inference-cli.py`)
 ```bash
 python inference-cli.py \
 --model yolov11n-license-plate.pt \
@@ -63,7 +65,7 @@ python inference-cli.py \
 --conf 0.25 \
 --imgsz 1280
 ```
-> ตรวจจับจากภาพที่ระบุผ่าน CLI และบันทึกผลลัพธ์ไว้ที่ `results/cli_inference_result.jpg`
+> ตรวจจับจากภาพที่ระบุผ่าน CLI และบันทึกผลลัพธ์ไว้ที่ `output/cli_inference_result.jpg`
 
 ### Detect on PyTorch (Ultralytics Python API)
 ```python
