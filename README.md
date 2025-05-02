@@ -81,7 +81,7 @@ source=examples/plate.jpg
 ![val_batch1](results/val_batch1_pred.jpg)
 ![val_batch2](results/val_batch2_pred.jpg)
 
-## 📚 requirements.txt
+## requirements.txt
 ```txt
 ultralytics
 opencv-python
@@ -89,7 +89,7 @@ matplotlib
 pandas
 ```
 
-## 🔤 การรวม OCR (อ่านป้ายทะเบียน)
+## การประยุกต์ใช้ในงาน ALPR ด้วย OCR สำหรับอ่านป้ายทะเบียนอัตโนมัติ
 
 โมเดลนี้ทำหน้าที่ “ตรวจจับ” ตำแหน่งป้ายทะเบียนเท่านั้น หากต้องการ “อ่านตัวอักษร” บนป้าย ให้ใช้ OCR ร่วม เช่น:
 - [EasyOCR](https://github.com/JaidedAI/EasyOCR)
@@ -102,7 +102,7 @@ pandas
 - กล้องตรวจสอบการจราจร
 - ระบบติดตามรถตามหมายเลขทะเบียน
 
-## 📜 License
+## License
 - **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
 - **โมเดลต้นทาง (YOLOv11)**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)
 - **Fine-tuned**: AGPLv3 โดย [MorseTechLab](https://www.morsetechlab.com)
