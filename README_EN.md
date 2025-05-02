@@ -69,12 +69,86 @@ python inference-cli.py \
 
 ### Detect with PyTorch (Ultralytics Python API)
 ```python
-# (Same content as provided previously)
+import os
+import cv2
+import numpy as np
+from ultralytics import YOLO
+
+# Define the path to the input image
+image_dir = "images"
+image_file = "cars.jpg"
+image_path = os.path.join(image_dir, image_file)
+
+# Load the fine-tuned YOLOv11 model
+model = YOLO("yolov11x-license-plate.pt")
+
+# Load the image using OpenCV
+original_image = cv2.imread(image_path)
+
+# Verify that the image was loaded successfully
+if original_image is None:
+    raise FileNotFoundError(f"File {image_path} is not found")
+
+# Convert image from BGR (OpenCV) to RGB (Ultralytics)
+image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
+
+# Run inference
+results = model.predict(
+    source=image_rgb,
+    conf=0.25,
+    imgsz=1280,
+    save=False,
+    show=False
+)
+
+# Draw detection results on the original image
+for r in results:
+    for box in r.boxes:
+        x1, y1, x2, y2 = map(int, box.xyxy[0])
+        conf = box.conf[0]
+        label = r.names[int(box.cls[0])]
+
+        cv2.rectangle(original_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.putText(original_image, f"{label} {conf:.2f}", (x1, y1 - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+
+# Display the result
+cv2.imshow("YOLOv11 License Plate Detection", original_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Save the result image
+output_path = os.path.join("output", "inference_result.jpg")
+os.makedirs("output", exist_ok=True)
+cv2.imwrite(output_path, original_image)
+print(f"output: {output_path}")
 ```
 
 ### Detect with ONNX (ONNX Runtime)
 ```python
-# (Same content as provided previously)
+import onnxruntime as ort
+import numpy as np
+import cv2
+
+# Load the input image
+image_path = "images/cars.jpg"
+image_bgr = cv2.imread(image_path)
+
+if image_bgr is None:
+    raise FileNotFoundError(f"File {image_path} is not found")
+
+# Preprocess: Resize the image to 640x640 as required by YOLOv11
+resized = cv2.resize(image_bgr, (640, 640))
+input_tensor = resized.transpose(2, 0, 1)[np.newaxis].astype(np.float32) / 255.0
+
+# Load ONNX model
+session = ort.InferenceSession("yolov11n-license-plate.onnx")
+input_name = session.get_inputs()[0].name
+
+# Run inference
+outputs = session.run(None, {input_name: input_tensor})
+
+# outputs[0] contains the raw detection results, further post-processing (e.g., NMS) is needed
 ```
 
 ## Results
@@ -109,9 +183,9 @@ pandas
 ## ALPR Use with OCR for Reading License Plates
 
 This model only **detects** the license plate region. For **reading characters**, pair it with OCR tools such as:
-- EasyOCR
-- Tesseract OCR
-- PaddleOCR
+- [EasyOCR](https://github.com/JaidedAI/EasyOCR)
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
+- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 
 ## 💡 Real-World Applications
 - Smart Parking Systems
@@ -120,6 +194,6 @@ This model only **detects** the license plate region. For **reading characters**
 - License Plate-based Vehicle Tracking
 
 ## License
-- **Dataset**: CC BY 4.0 from Roboflow Universe
-- **Base Model (YOLOv11)**: AGPLv3 by Ultralytics
-- **Fine-tuned Models**: AGPLv3 by MorseTechLab
+- **Dataset**: CC BY 4.0 from [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
+- **Base Model (YOLOv11)**: AGPLv3 by [Ultralytics](https://github.com/ultralytics/ultralytics)
+- **Fine-tuned Models**: AGPLv3 by [MorseTechLab](https://www.morsetechlab.com)
