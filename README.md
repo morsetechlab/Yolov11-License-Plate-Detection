@@ -36,19 +36,19 @@
 ## Model
 
 ### PyTorch Format (.pt)
-- [`yolov11n-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11n-license-plate.pt)
-- [`yolov11s-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11s-license-plate.pt)
-- [`yolov11m-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11m-license-plate.pt)
-- [`yolov11l-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11l-license-plate.pt)
-- [`yolov11x-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11x-license-plate.pt)
-
+- [`lpr-finetune-v1n.pt`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1n.pt)
+- [`lpr-finetune-v1s.pt`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1s.pt)
+- [`lpr-finetune-v1m.pt`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1m.pt)
+- [`lpr-finetune-v1l.pt`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1l.pt)
+- [`lpr-finetune-v1x.pt`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1x.pt)
 
 ### ONNX Format (.onnx)
-- [`yolov11n-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11n-license-plate.onnx)
-- [`yolov11s-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11s-license-plate.onnx)
-- [`yolov11m-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11m-license-plate.onnx)
-- [`yolov11l-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11l-license-plate.onnx)
-- [`yolov11x-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11x-license-plate.onnx)
+- [`lpr-finetune-v1n.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1n.onnx)
+- [`lpr-finetune-v1s.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1s.onnx)
+- [`lpr-finetune-v1m.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1m.onnx)
+- [`lpr-finetune-v1l.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1l.onnx)
+- [`lpr-finetune-v1x.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1x.onnx)
+
 
 ## Inference
 ![CLI Inference](results/cli_inference_result.jpg)
