@@ -1,5 +1,4 @@
-
-# YOLOv11-License-Plate Detection (License Plate Detection Model)
+# YOLOv11-License-Plate Detection
 
 This repository contains fine-tuned models based on YOLOv11 (n, s, m, l, x) using a dataset from Roboflow Universe:  
 [License Plate Recognition Dataset (10,125 images)](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/11)
