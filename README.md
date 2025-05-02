@@ -50,19 +50,104 @@
 - [`yolov11l-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11l-license-plate.onnx)
 - [`yolov11x-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11x-license-plate.onnx)
 
-## ทดสอบการใช้งาน (Inference)
-<!-- Image path=results/PR_curve.png -->
+## Inference
+![CLI Inference](results/cli_inference_result.jpg)
 
-### Detect on image using CLI:
+![Video Inference](output.gif)
+
+#### Detect on Command Line (`inference-cli.py`)
 ```bash
-yolo task=detect \
-mode=predict \
-model=yolov11n-license-plate.pt \
-conf=0.25 \
-imgsz=1280 \
-line_thickness=1 \
-max_det=1000 \
-source=examples/plate.jpg
+python inference-cli.py \
+--model yolov11n-license-plate.pt \
+--source examples/plate.jpg \
+--conf 0.25 \
+--imgsz 1280
+```
+> ตรวจจับจากภาพที่ระบุผ่าน CLI และบันทึกผลลัพธ์ไว้ที่ `results/cli_inference_result.jpg`
+
+### Detect on PyTorch (Ultralytics Python API)
+```python
+
+import os
+import cv2
+import numpy as np
+from ultralytics import YOLO
+
+# กำหนด path ของไฟล์ภาพ
+image_dir = "images"
+image_file = "cars.jpg"
+image_path = os.path.join(image_dir, image_file)
+
+# โหลดโมเดล YOLOv11 ที่ fine-tune แล้ว
+model = YOLO("yolov11x-license-plate.pt")
+
+# โหลดภาพด้วย OpenCV
+original_image = cv2.imread(image_path)
+
+# ตรวจสอบว่าภาพโหลดสำเร็จหรือไม่
+if original_image is None:
+    raise FileNotFoundError(f"File {image_path} is not found")
+
+# แปลงจาก BGR เป็น RGB
+image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
+
+# ทำ Inference
+results = model.predict(
+    source=image_rgb,
+    conf=0.25,
+    imgsz=1280,
+    save=False,
+    show=False
+)
+
+# วาดผลลัพธ์บนภาพต้นฉบับ
+for r in results:
+    for box in r.boxes:
+        x1, y1, x2, y2 = map(int, box.xyxy[0])
+        conf = box.conf[0]
+        label = r.names[int(box.cls[0])]
+
+        cv2.rectangle(original_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.putText(original_image, f"{label} {conf:.2f}", (x1, y1 - 10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
+
+# แสดงผลลัพธ์
+cv2.imshow("YOLOv11 License Plate Detection", original_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# บันทึกภาพผลลัพธ์
+output_path = os.path.join("output", "inference_result.jpg")
+os.makedirs("output", exist_ok=True)
+cv2.imwrite(output_path, original_image)
+print(f"output: {output_path}")
+```
+
+### Detect on ONNX (ONNX Runtime)
+```python
+import onnxruntime as ort
+import numpy as np
+import cv2
+
+# โหลดรูปภาพ
+image_path = "images/cars.jpg"
+image_bgr = cv2.imread(image_path)
+
+if image_bgr is None:
+    raise FileNotFoundError(f"File {image_path} is not found")
+
+# pre-processing
+resized = cv2.resize(image_bgr, (640, 640)) # Resize ภาพให้มีขนาด 640x640 (ตามที่ YOLOv11 ใช้)
+input_tensor = resized.transpose(2, 0, 1)[np.newaxis].astype(np.float32) / 255.0
+
+# โหลดโมเดล ONNX
+session = ort.InferenceSession("yolov11n-license-plate.onnx")
+input_name = session.get_inputs()[0].name
+
+# ทำ Inference
+outputs = session.run(None, {input_name: input_tensor})
+
+# outputs[0] จะเป็นผลลัพธ์ที่ต้อง post-process ต่อ เช่น NMS
 ```
 
 ## Results
@@ -88,6 +173,7 @@ source=examples/plate.jpg
 ## requirements.txt
 ```txt
 ultralytics
+onnxruntime
 opencv-python
 matplotlib
 pandas
