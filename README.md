@@ -96,7 +96,7 @@ pandas
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract)
 - [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 
-## 💡 ตัวอย่างการใช้งาน
+## 💡 ตัวอย่างการนำไปใช้งาน Real-World Application
 - ระบบจอดรถอัจฉริยะ (Smart Parking)
 - ระบบประตูอัตโนมัติ (Tollgate / Access Control)
 - กล้องตรวจสอบการจราจร
