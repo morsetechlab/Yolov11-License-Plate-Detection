@@ -1,4 +1,6 @@
 
+# 📘 [English version available here](README_EN.md)
+
 # YOLOv11-License-Plate Detection (โมเดลตรวจจับป้ายทะเบียน)
 
 โมเดลนี้ถูก Fine-Tune มาจาก YOLOv11 รุ่นต่าง ๆ (n, s, m, l, x) โดยใช้ Dataset จาก Roboflow Universe:  
