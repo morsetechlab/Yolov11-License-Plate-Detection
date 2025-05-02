@@ -36,19 +36,19 @@
 ## Model
 
 ### PyTorch Format (.pt)
-- [`yolov11n-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11n-license-plate.pt)
-- [`yolov11s-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11s-license-plate.pt)
-- [`yolov11m-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11m-license-plate.pt)
-- [`yolov11l-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11l-license-plate.pt)
-- [`yolov11x-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11x-license-plate.pt)
+- [`yolov11n-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11n-license-plate.pt)
+- [`yolov11s-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11s-license-plate.pt)
+- [`yolov11m-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11m-license-plate.pt)
+- [`yolov11l-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11l-license-plate.pt)
+- [`yolov11x-license-plate.pt`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11x-license-plate.pt)
 
 
 ### ONNX Format (.onnx)
-- [`yolov11n-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11n-license-plate.onnx)
-- [`yolov11s-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11s-license-plate.onnx)
-- [`yolov11m-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11m-license-plate.onnx)
-- [`yolov11l-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11l-license-plate.onnx)
-- [`yolov11x-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0/yolov11x-license-plate.onnx)
+- [`yolov11n-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11n-license-plate.onnx)
+- [`yolov11s-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11s-license-plate.onnx)
+- [`yolov11m-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11m-license-plate.onnx)
+- [`yolov11l-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11l-license-plate.onnx)
+- [`yolov11x-license-plate.onnx`](https://github.com/morsetechlab/yolov11-license-plate/releases/download/v1.0.0/yolov11x-license-plate.onnx)
 
 ## Inference
 ![CLI Inference](results/cli_inference_result.jpg)
