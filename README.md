@@ -51,6 +51,13 @@
 - [`license-plate-finetune-v1l.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/license-plate-finetune-v1l.onnx)
 - [`license-plate-finetune-v1x.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/license-plate-finetune-v1x.onnx)
 
+## 🤗 Hugging Face
+
+สามารถใช้งานโมเดลนี้ได้บน Hugging Face Hub เช่นกัน:  
+👉 [https://huggingface.co/morsetechlab/yolov11-license-plate-detection](https://huggingface.co/morsetechlab/yolov11-license-plate-detection)
+
+
+
 ## Training Pipeline
 ```python
 from ultralytics import YOLO
