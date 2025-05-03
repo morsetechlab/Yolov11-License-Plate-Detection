@@ -50,6 +50,40 @@ to save time and cost for developers who need a fast and accurate license plate 
 - [`license-plate-finetune-v1l.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/license-plate-finetune-v1l.onnx)
 - [`license-plate-finetune-v1x.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/license-plate-finetune-v1x.onnx)
 
+## 🤗 Hugging Face
+
+Hugging Face Hub 👉 https://huggingface.co/morsetechlab/yolov11-license-plate-detection
+
+#### PyTorch (.pt)
+
+wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.pt
+
+#### ONNX (.onnx)
+
+wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.onnx
+
+### Download with `hf_hub_download` (ideal for Jetson, Raspberry Pi)
+
+from huggingface_hub import hf_hub_download
+
+# PyTorch (.pt)
+model_path = hf_hub_download(
+    repo_id="morsetechlab/yolov11-license-plate-detection",
+    filename="license-plate-finetune-v1n.pt"
+)
+
+# ONNX (.onnx)
+onnx_path = hf_hub_download(
+    repo_id="morsetechlab/yolov11-license-plate-detection",
+    filename="license-plate-finetune-v1n.onnx"
+)
+
+# Notes:
+# - Supports automatic caching
+# - Lightweight and efficient for resource-constrained edge devices
+# - Compatible with Jetson Nano, Raspberry Pi, and other ARM-based boards
+
+
 ## Training Pipeline
 ```python
 from ultralytics import YOLO

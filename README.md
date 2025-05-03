@@ -53,9 +53,41 @@
 
 ## 🤗 Hugging Face
 
-สามารถใช้งานโมเดลนี้ได้บน Hugging Face Hub เช่นกัน:  
-👉 [https://huggingface.co/morsetechlab/yolov11-license-plate-detection](https://huggingface.co/morsetechlab/yolov11-license-plate-detection)
+Hugging Face Hub 👉 [https://huggingface.co/morsetechlab/yolov11-license-plate-detection](https://huggingface.co/morsetechlab/yolov11-license-plate-detection)
 
+#### PyTorch (.pt)
+
+```bash
+wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.pt
+```
+
+#### ONNX (.onnx)
+
+```bash
+wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.onnx
+```
+
+### ดาวน์โหลดด้วย `hf_hub_download` (เหมาะกับ Jetson, Raspberry Pi)
+
+```python
+from huggingface_hub import hf_hub_download
+
+# PyTorch (.pt)
+model_path = hf_hub_download(
+    repo_id="morsetechlab/yolov11-license-plate-detection",
+    filename="license-plate-finetune-v1n.pt"
+)
+
+# ONNX (.onnx)
+onnx_path = hf_hub_download(
+    repo_id="morsetechlab/yolov11-license-plate-detection",
+    filename="license-plate-finetune-v1n.onnx"
+)
+```
+
+> รองรับระบบแคชอัตโนมัติ  
+> ประหยัดทรัพยากร เหมาะกับอุปกรณ์ edge ที่สเปกจำกัด  
+> ใช้งานได้กับ Jetson Nano, Raspberry Pi, และบอร์ด ARM อื่น ๆ
 
 
 ## Training Pipeline
