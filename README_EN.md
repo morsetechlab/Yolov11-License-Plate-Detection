@@ -52,18 +52,21 @@ to save time and cost for developers who need a fast and accurate license plate 
 
 ## 🤗 Hugging Face
 
-Hugging Face Hub 👉 https://huggingface.co/morsetechlab/yolov11-license-plate-detection
+Hugging Face Hub 👉 [https://huggingface.co/morsetechlab/yolov11-license-plate-detection](https://huggingface.co/morsetechlab/yolov11-license-plate-detection)
 
 #### PyTorch (.pt)
-
+```bash
 wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.pt
+```
 
 #### ONNX (.onnx)
-
+```bash
 wget https://huggingface.co/morsetechlab/yolov11-license-plate-detection/resolve/main/lpr-finetune-v1x.onnx
+```
 
 ### Download with `hf_hub_download` (ideal for Jetson, Raspberry Pi)
 
+```python
 from huggingface_hub import hf_hub_download
 
 # PyTorch (.pt)
@@ -77,6 +80,7 @@ onnx_path = hf_hub_download(
     repo_id="morsetechlab/yolov11-license-plate-detection",
     filename="license-plate-finetune-v1n.onnx"
 )
+```
 
 > Supports automatic caching
 > Lightweight and efficient for resource-constrained edge devices
