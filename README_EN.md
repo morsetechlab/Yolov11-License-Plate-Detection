@@ -82,9 +82,9 @@ onnx_path = hf_hub_download(
 )
 ```
 
-> Supports automatic caching
-> Lightweight and efficient for resource-constrained edge devices
-> Compatible with Jetson Nano, Raspberry Pi, and other ARM-based boards
+> - Supports automatic caching,
+> - Lightweight and efficient for resource-constrained edge devices
+> - Compatible with Jetson Nano, Raspberry Pi, and other ARM-based boards
 
 
 ## Training Pipeline
