@@ -51,6 +51,34 @@
 - [`lpr-finetune-v1l.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1l.onnx)
 - [`lpr-finetune-v1x.onnx`](https://github.com/morsetechlab/yolov11-license-plate-detection/releases/download/v1.0.0/lpr-finetune-v1x.onnx)
 
+## Training Pipeline
+```python
+from ultralytics import YOLO
+
+model = YOLO("yolo11n.pt")
+
+model.train(
+    data=f"{base_path}/data.yaml",
+    epochs=300,
+    imgsz=640,
+    batch=16,
+    name="license-plate-finetune-v1n",
+    device=0, # GPU
+    patience=15, # early stopping if not improve
+    workers=2,
+    val=True
+)
+```
+
+## Export to ONNX
+```python
+from ultralytics import YOLO
+
+model = YOLO(model_path)
+
+# export
+result = model.export(format="onnx", dynamic=True, simplify=True)
+```
 
 ## Inference
 ![CLI Inference](results/cli_inference_result.jpg)
