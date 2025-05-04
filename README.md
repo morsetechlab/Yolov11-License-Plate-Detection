@@ -266,17 +266,4 @@ pandas
 ## License
 - **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
 - **โมเดลต้นทาง (YOLOv11)**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)
-@misc{
-    license-plate-recognition-rxg4e_dataset,
-    title = { License Plate Recognition Dataset },
-    type = { Open Source Dataset },
-    author = { Roboflow Universe Projects },
-    howpublished = { \url{ https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e } },
-    url = { https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e },
-    journal = { Roboflow Universe },
-    publisher = { Roboflow },
-    year = { 2025 },
-    month = { apr },
-    note = { visited on 2025-05-04 },
-    }
 - **Fine-tuned**: AGPLv3 โดย [MorseTechLab](https://www.morsetechlab.com)
