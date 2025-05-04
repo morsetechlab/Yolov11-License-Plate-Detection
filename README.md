@@ -266,4 +266,4 @@ pandas
 ## License
 - **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
 - **โมเดลต้นทาง (YOLOv11)**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)
-- **Fine-tuned**: AGPLv3 โดย [MorseTechLab](https://www.morsetechlab.com)
+- **Fine-tuned Models**: AGPLv3 โดย [MorseTechLab](https://www.morsetechlab.com)
