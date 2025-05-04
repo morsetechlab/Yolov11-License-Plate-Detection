@@ -263,7 +263,7 @@ pandas
 - กล้องตรวจสอบการจราจร
 - ระบบติดตามรถตามหมายเลขทะเบียน
 
-## License
+## 🛡️ License
 - **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
 - **โมเดลต้นทาง (YOLOv11)**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)
 - **Fine-tuned Models**: AGPLv3 โดย [MorseTechLab](https://www.morsetechlab.com)

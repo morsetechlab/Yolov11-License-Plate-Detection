@@ -259,7 +259,7 @@ This model only **detects** the license plate region. For **reading characters**
 - Traffic Surveillance Cameras
 - License Plate-based Vehicle Tracking
 
-## License
+## 🛡️ License
 - **Dataset**: CC BY 4.0 from [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
 - **Base Model (YOLOv11)**: AGPLv3 by [Ultralytics](https://github.com/ultralytics/ultralytics)
 - **Fine-tuned Models**: AGPLv3 by [MorseTechLab](https://www.morsetechlab.com)
