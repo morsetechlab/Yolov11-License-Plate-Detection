@@ -261,10 +261,10 @@ This model only **detects** the license plate region. For **reading characters**
 
 ## Attribution
 
-- **Open source computer vision library**: [OpenCV](https://github.com/opencv/opencv)
-- **YOLOv11**: [Ultralytics](https://github.com/ultralytics/ultralytics)  
-- **Dataset**: [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
-- **Fine-Tuned, evaluated, and packaged**: [MorseTech Lab](https://www.morsetechlab.com)
+- **Open source computer vision library** [OpenCV](https://github.com/opencv/opencv)
+- **YOLOv11** [Ultralytics](https://github.com/ultralytics/ultralytics)  
+- **Dataset** [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
+- **Fine-Tuned, evaluated, and packaged** [MorseTech Lab](https://www.morsetechlab.com)
 
 ## 🛡️ License
 
