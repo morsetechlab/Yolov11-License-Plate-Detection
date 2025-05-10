@@ -1,5 +1,5 @@
 
-# 📘 [English version available here](README_EN.md)
+# 📘 [English version available here](README.en.md)
 
 # YOLOv11-License-Plate Detection (โมเดลตรวจจับป้ายทะเบียน)
 
