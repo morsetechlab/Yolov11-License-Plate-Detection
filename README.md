@@ -263,12 +263,12 @@ pandas
 - กล้องตรวจสอบการจราจร
 - ระบบติดตามรถตามหมายเลขทะเบียน
 
+## Attribution
+
+- **Open source computer vision library**: Apache License 2.0 จาก [OpenCV](https://github.com/opencv/opencv)
+- **YOLOv11**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)  
+- **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
+
 ## 🛡️ License
 
 Project นี้เผยแพร่ภายใต้ [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE) เพื่อให้สอดคล้องกับเงื่อนไขการใช้งานของไลบรารีที่เกี่ยวข้อง
-
-- **โมเดลต้นทาง (YOLOv11)**: AGPLv3 โดย [Ultralytics](https://github.com/ultralytics/ultralytics)  
-- **ชุดข้อมูล**: CC BY 4.0 จาก [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)  
-- **Open source computer vision library**: Apache License 2.0 จาก [OpenCV](https://github.com/opencv/opencv)
-
-

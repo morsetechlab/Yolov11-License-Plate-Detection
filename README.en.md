@@ -259,11 +259,12 @@ This model only **detects** the license plate region. For **reading characters**
 - Traffic Surveillance Cameras
 - License Plate-based Vehicle Tracking
 
+## Attribution
+
+- **Open source computer vision library**: Apache License 2.0 from [OpenCV](https://github.com/opencv/opencv)
+- **YOLOv11**: AGPLv3 by [Ultralytics](https://github.com/ultralytics/ultralytics)  
+- **Dataset**: CC BY 4.0 from [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)
+
 ## 🛡️ License
 
 This project is licensed under the [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE), in order to comply with the licenses of core dependencies used in this project
-
-- **Base Model (YOLOv11)**: AGPLv3 by [Ultralytics](https://github.com/ultralytics/ultralytics)  
-- **Dataset**: CC BY 4.0 from [Roboflow Universe](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e)  
-- **Open source computer vision library**: Apache License 2.0 from [OpenCV](https://github.com/opencv/opencv)
-
