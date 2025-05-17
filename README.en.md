@@ -8,13 +8,13 @@ to save time and cost for developers who need a fast and accurate license plate 
 
 ## 🔥 YOLOv11-License-Plate Performance
 
-| Model     | Precision | Recall  | mAP@50  | mAP@50-95 | Box Loss  | Class Loss  |
-|-----------|-----------|---------|---------|-----------|-----------|-------------|
-| YOLOv11n  | 0.9835    | 0.9505  | 0.9786  | 0.723     | 1.0300    | 0.3765      |
-| YOLOv11s  | 0.9831    | 0.9524  | 0.9794  | 0.7285    | 1.0274    | 0.3576      |
-| YOLOv11m  | 0.9831    | 0.9553  | 0.9805  | 0.7301    | 1.0295    | 0.3519      |
-| YOLOv11l  | 0.9836    | 0.9608  | 0.9826  | 0.7307    | 1.0338    | 0.3481      |
-| YOLOv11x  | 0.9893    | 0.9508  | 0.9813  | 0.7260    | 1.0364    | 0.3661      |
+| Model     | Precision | Recall  | mAP@50  | mAP@50-95 | Box Loss  | Class Loss  | Epoch |
+|-----------|-----------|---------|---------|-----------|-----------|-------------|--------|
+| YOLOv11n  | 0.98350   | 0.95054 | 0.97856 | 0.72303   | 1.03004   | 0.37652     | 94     |
+| YOLOv11s  | 0.97585   | 0.95444 | 0.97828 | 0.72970   | 1.02842   | 0.35631     | 119    |
+| YOLOv11m  | 0.97750   | 0.95854 | 0.97964 | 0.73273   | 1.02907   | 0.35829     | 92     |
+| YOLOv11l  | 0.98326   | 0.95945 | 0.98111 | 0.73178   | 1.03286   | 0.35499     | 101    |
+| YOLOv11x  | 0.98729   | 0.95514 | 0.98035 | 0.73118   | 1.03362   | 0.36342     | 88     |
 
 > Notes:  
 > - **Precision**: Detection accuracy  
@@ -23,13 +23,13 @@ to save time and cost for developers who need a fast and accurate license plate 
 > - **mAP@50-95**: Mean Average Precision across multiple IoUs  
 > - **Box Loss / Class Loss**: Loss functions during training
 
-**Recommended Use Cases:**
+### 🧠 Model Selection Guide
 
-- `YOLOv11n` – Ultra lightweight, ideal for **Jetson Nano, Raspberry Pi, or CPU**
-- `YOLOv11s` – Lightweight and accurate, suitable for **edge devices**
-- `YOLOv11m` – Balanced, great for **PC/Server without GPU**
-- `YOLOv11l` – High accuracy, best for **Cloud or GPU Desktop**
-- `YOLOv11x` – Highest precision, suitable for **Cloud GPU only**
+- **`YOLOv11n`** – Ultra-lightweight, ideal for edge devices (Jetson, Raspberry Pi)
+- **`YOLOv11s`** – Fast and efficient for real-time inference on CPU
+- **`YOLOv11m`** – Best balance of accuracy and performance for most use cases
+- **`YOLOv11l`** – High accuracy for demanding applications (LPR, security)
+- **`YOLOv11x`** – Maximum precision, recommended for GPU-powered systems
 
 > `.pt` is for Python and Ultralytics CLI (`yolo task=detect`)  
 > `.onnx` is for other inference systems such as OpenCV DNN, TensorRT, or ONNXRuntime
@@ -117,7 +117,7 @@ result = model.export(format="onnx", dynamic=True, simplify=True)
 ```
 
 ## Inference
-![CLI Inference](results/cli_inference_result.jpg)
+![CLI Inference](cli_inference_result.jpg)
 
 <p align="center">
   <img src="output.gif" width="100%" />
@@ -219,23 +219,27 @@ outputs = session.run(None, {input_name: input_tensor})
 
 ## Results
 
+**The results shown below are from the `license-plate-finetune-v1x` model, which achieved the highest performance among all models we trained.**  
+You can explore results from other models at  
+[`/detect`](detect)
+
 ### PR Curve (Precision-Recall)
 
-![PR Curve](results/PR_curve.png)
+![PR Curve](detect/license-plate-finetune-v1x/PR_curve.png)
 
 ### Training Losses and mAP over time
 
-![Training Results](results/results.png)
+![Training Results](detect/license-plate-finetune-v1x/results.png)
 
 ### Confusion Matrix
 
-![Confusion Matrix](results/confusion_matrix.png)
+![Confusion Matrix](detect/license-plate-finetune-v1x/confusion_matrix.png)
 
 ### Validation Batches
 
-![val_batch0](results/val_batch0_pred.jpg)  
-![val_batch1](results/val_batch1_pred.jpg)  
-![val_batch2](results/val_batch2_pred.jpg)
+![val_batch0](detect/license-plate-finetune-v1x/val_batch0_pred.jpg)  
+![val_batch1](detect/license-plate-finetune-v1x/val_batch1_pred.jpg)  
+![val_batch2](detect/license-plate-finetune-v1x/val_batch2_pred.jpg)
 
 ## requirements.txt
 ```txt
