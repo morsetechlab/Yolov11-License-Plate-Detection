@@ -223,9 +223,7 @@ outputs = session.run(None, {input_name: input_tensor})
 
 ## Results
 
-**ผลลัพธ์ด้านล่างมาจากโมเดล `license-plate-finetune-v1x` ซึ่งมีประสิทธิภาพสูงสุดในชุดที่เราเทรน**  
-สามารถดูผลลัพธ์ของโมเดลอื่นเพิ่มเติมได้ที่  
-[`/detect`](detect)
+> **ผลลัพธ์ด้านล่างมาจากโมเดล `license-plate-finetune-v1x` ซึ่งมีประสิทธิภาพสูงสุดในชุดที่เราเทรน**  สามารถดูผลลัพธ์ของโมเดลอื่นเพิ่มเติมได้ที่  [`/detect`](detect)
 
 ### PR Curve (Precision-Recall)
 

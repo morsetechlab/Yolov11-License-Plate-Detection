@@ -219,9 +219,7 @@ outputs = session.run(None, {input_name: input_tensor})
 
 ## Results
 
-**The results shown below are from the `license-plate-finetune-v1x` model, which achieved the highest performance among all models we trained.**  
-You can explore results from other models at  
-[`/detect`](detect)
+> **The results shown below are from the `license-plate-finetune-v1x` model, which achieved the highest performance among all models we trained.**  You can explore results from other models at [`/detect`](detect)
 
 ### PR Curve (Precision-Recall)
 
