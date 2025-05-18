@@ -301,3 +301,17 @@ Project นี้เผยแพร่ภายใต้ [GNU Affero General Pub
 <!--
 tags: YOLOv11, License Plate Detection, Thai ALPR, Automatic License Plate Recognition, YOLOv11n, YOLOv11x, Ultralytics, Object Detection, Computer Vision, OpenCV, ONNX, Jetson, Raspberry Pi, PaddleOCR
 -->
+
+<!-- Open Graph / Twitter Meta -->
+<!--
+<meta property="og:title" content="YOLOv11-License-Plate: Thai License Plate Detection using YOLOv11 (n/s/m/l/x)" />
+<meta property="og:description" content="Fast and accurate license plate detection using fine-tuned YOLOv11 models. Optimized for ALPR systems and edge devices. Supports PyTorch and ONNX formats." />
+<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
+<meta property="og:url" content="https://github.com/morsetechlab/yolov11-license-plate-detection" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="YOLOv11-License-Plate: Thai License Plate Detection using YOLOv11 (n–x)" />
+<meta name="twitter:description" content="Real-time license plate detection with YOLOv11, trained on Thai plates. Ideal for parking systems, surveillance, and embedded AI." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
+-->
