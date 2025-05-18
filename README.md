@@ -288,7 +288,7 @@ Project นี้เผยแพร่ภายใต้ [GNU Affero General Pub
 
 ## Citation
 ```bibtex
-@misc{morsetechlab2025yolov11,
+@misc{morsetechlab2025yolov11licenseplate,
   title = {YOLOv11-License-Plate: Fast and Accurate License Plate Detection using YOLOv11},
   author = {MorseTech Lab},
   year = {2025},

@@ -284,7 +284,7 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
 
 ## Citation
 ```bibtex
-@misc{morsetechlab2025yolov11,
+@misc{morsetechlab2025yolov11licenseplate,
   title = {YOLOv11-License-Plate: Fast and Accurate License Plate Detection using YOLOv11},
   author = {MorseTech Lab},
   year = {2025},
