@@ -127,10 +127,13 @@ result = model.export(format="onnx", dynamic=True, simplify=True)
 ```
 
 ## Inference
-![CLI Inference](cli_inference_result.jpg)
 
 <p align="center">
-  <img src="output.gif" width="100%" />
+  <img src="cli_inference_result.jpg" alt="CLI Inference" width="100%" />
+</p>
+
+<p align="center">
+  <img src="output.gif" alt="Video ouput Inference" width="100%" />
 </p>
 
 ### Detect on Command Line (`inference-cli.py`)
@@ -233,21 +236,33 @@ outputs = session.run(None, {input_name: input_tensor})
 
 ### PR Curve (Precision-Recall)
 
-![PR Curve](detect/license-plate-finetune-v1x/PR_curve.png)
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/PR_curve.png" alt="PR Curve" width="100%" />
+</p>
 
 ### Training Losses and mAP over time
 
-![Training Results](detect/license-plate-finetune-v1x/results.png)
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/results.png" alt="Training Results" width="100%" />
+</p>
 
 ### Confusion Matrix
 
-![Confusion Matrix](detect/license-plate-finetune-v1x/confusion_matrix.png)
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/confusion_matrix.png" alt="Confusion Matrix" width="100%" />
+</p>
 
 ### Validation Batches
 
-![val_batch0](detect/license-plate-finetune-v1x/val_batch0_pred.jpg)  
-![val_batch1](detect/license-plate-finetune-v1x/val_batch1_pred.jpg)  
-![val_batch2](detect/license-plate-finetune-v1x/val_batch2_pred.jpg)
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/val_batch0_pred.jpg" alt="val_batch0" width="100%" />
+</p>
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/val_batch1_pred.jpg" alt="val_batch1" width="100%" />
+</p>
+<p align="center">
+  <img src="detect/license-plate-finetune-v1x/val_batch2_pred.jpg" alt="val_batch2" width="100%" />
+</p>
 
 ## requirements.txt
 ```txt
@@ -291,8 +306,6 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
   url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
 }
 ```
-
-<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
 
 <!--
 tags: YOLOv11, License Plate Detection, Thai ALPR, Automatic License Plate Recognition, YOLOv11n, YOLOv11x, Ultralytics, Object Detection, Computer Vision, OpenCV, ONNX, Jetson, Raspberry Pi, PaddleOCR
