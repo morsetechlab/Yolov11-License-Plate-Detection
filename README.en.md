@@ -1,6 +1,13 @@
 # 📘 [เวอร์ชั่นภาษาไทยที่นี่](README.md)
 
-# YOLOv11-License-Plate Detection
+![YOLOv11](https://img.shields.io/badge/Model-YOLOv11-purple?style=for-the-badge)
+![Task: ALPR](https://img.shields.io/badge/Task-License%20Plate%20Detection-blue?style=for-the-badge)
+![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-red?style=for-the-badge)
+![ONNX Supported](https://img.shields.io/badge/ONNX-Supported-green?style=for-the-badge)
+
+
+# YOLOv11-License-Plate Detection | License Plate Detection using Ultralytics YOLOv11 (n/s/m/l/x)
+> Fine-tuned YOLOv11 models (n/s/m/l/x) for fast and accurate license plate detection vehicles. Supports PyTorch (.pt) and ONNX formats. Optimized for edge devices and real-world ALPR systems.
 
 This model is fine-tuned from various YOLOv11 versions (n, s, m, l, x) using a dataset from Roboflow Universe:  
 [License Plate Recognition Dataset (10,125 images)](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/11)  
@@ -8,7 +15,9 @@ to save time and cost for developers who need a fast and accurate license plate 
 
 ## 🔥 YOLOv11-License-Plate Performance
 
-| Model     | Precision | Recall  | mAP@50  | mAP@50-95 | Box Loss  | Class Loss  | Epoch |
+📌 *Metrics from validation set (no separate test set used)*  
+
+| Model     | Precision (val) | Recall (val) | mAP@50 (val) | mAP@50-95 (val) | Box Loss | Class Loss | Epoch |
 |-----------|-----------|---------|---------|-----------|-----------|-------------|--------|
 | YOLOv11n  | 0.98350   | 0.95054 | 0.97856 | 0.72303   | 1.03004   | 0.37652     | 94     |
 | YOLOv11s  | 0.97585   | 0.95444 | 0.97828 | 0.72970   | 1.02842   | 0.35631     | 119    |
@@ -271,3 +280,18 @@ This model only **detects** the license plate region. For **reading characters**
 ## 🛡️ License
 
 This project is licensed under the [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE), in order to comply with the licenses of core dependencies used in this project
+
+## Citation
+```bibtex
+@misc{morsetechlab2025yolov11,
+  title = {YOLOv11-License-Plate: Fast and Accurate License Plate Detection using YOLOv11},
+  author = {MorseTech Lab},
+  year = {2025},
+  url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
+}
+
+<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
+
+<!--
+tags: YOLOv11, License Plate Detection, Thai ALPR, Automatic License Plate Recognition, YOLOv11n, YOLOv11x, Ultralytics, Object Detection, Computer Vision, OpenCV, ONNX, Jetson, Raspberry Pi, PaddleOCR
+-->
