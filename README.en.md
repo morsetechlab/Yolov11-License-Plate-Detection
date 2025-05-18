@@ -289,6 +289,7 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
   year = {2025},
   url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
 }
+```
 
 <meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
 

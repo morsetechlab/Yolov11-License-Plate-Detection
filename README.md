@@ -294,6 +294,7 @@ Project นี้เผยแพร่ภายใต้ [GNU Affero General Pub
   year = {2025},
   url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
 }
+```
 
 <meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/yolov11-license-plate-detection/main/output.gif" />
 
