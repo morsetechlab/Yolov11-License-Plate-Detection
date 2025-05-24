@@ -1,10 +1,11 @@
 
 # 📘 [English version available here](README.en.md)
 
-![YOLOv11](https://img.shields.io/badge/Model-YOLOv11-purple?style=for-the-badge)
-![Task: ALPR](https://img.shields.io/badge/Task-License%20Plate%20Detection-blue?style=for-the-badge)
-![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-red?style=for-the-badge)
-![ONNX Supported](https://img.shields.io/badge/ONNX-Supported-green?style=for-the-badge)
+![YOLOv11](https://img.shields.io/badge/Model-YOLOv11-purple?style=flat)
+![Task: ALPR](https://img.shields.io/badge/Task-License%20Plate%20Detection-blue?style=flat)
+![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-red?style=flat)
+![ONNX Supported](https://img.shields.io/badge/ONNX-Supported-green?style=flat)
+
 
 
 # YOLOv11-License-Plate Detection | ตรวจจับป้ายทะเบียนด้วย Ultralytics YOLOv11 (n/s/m/l/x)
