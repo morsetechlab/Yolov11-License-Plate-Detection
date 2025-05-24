@@ -300,16 +300,6 @@ pandas
 
 Project นี้เผยแพร่ภายใต้ [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE) เพื่อให้สอดคล้องกับเงื่อนไขการใช้งานของไลบรารีที่เกี่ยวข้อง
 
-## Citation
-```bibtex
-@misc{morsetechlab2025yolov11licenseplate,
-  title = {YOLOv11-License-Plate: Fast and Accurate License Plate Detection using YOLOv11},
-  author = {MorseTech Lab},
-  year = {2025},
-  url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
-}
-```
-
 <!--
 tags: YOLOv11, License Plate Detection, Thai ALPR, Automatic License Plate Recognition, YOLOv11n, YOLOv11x, Ultralytics, Object Detection, Computer Vision, OpenCV, ONNX, Jetson, Raspberry Pi, PaddleOCR
 -->

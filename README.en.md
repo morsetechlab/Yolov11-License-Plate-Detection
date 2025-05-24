@@ -297,16 +297,6 @@ This model only **detects** the license plate region. For **reading characters**
 
 This project is licensed under the [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE), in order to comply with the licenses of core dependencies used in this project
 
-## Citation
-```bibtex
-@misc{morsetechlab2025yolov11licenseplate,
-  title = {YOLOv11-License-Plate: Fast and Accurate License Plate Detection using YOLOv11},
-  author = {MorseTech Lab},
-  year = {2025},
-  url = {https://github.com/morsetechlab/yolov11-license-plate-detection}
-}
-```
-
 <!--
 tags: YOLOv11, License Plate Detection, Thai ALPR, Automatic License Plate Recognition, YOLOv11n, YOLOv11x, Ultralytics, Object Detection, Computer Vision, OpenCV, ONNX, Jetson, Raspberry Pi, PaddleOCR
 -->
